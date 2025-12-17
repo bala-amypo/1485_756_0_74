@@ -9,18 +9,20 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Location;
-import com.example.demo.sevice.LocationServ;
+import com.example.demo.service.LocationServ;
 
 @RestController
 public class LocationCont {
     @Autowired
-    LocationServ locationservice;
+    private LocationServ locationService;
+
     @PostMapping("/addlocation")
-    public Location add(RequestBody Location le){
-        return locationservice.createlocation(le);
+    public Location add(@RequestBody Location location) {
+        return locationService.createlocation(location);
     }
+
     @GetMapping("/showlocation")
-    public List<Location> show(){
+    public List<Location> show() {
         return LocationServ.getalllocation();
     }
 }
