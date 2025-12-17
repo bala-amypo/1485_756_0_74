@@ -17,12 +17,12 @@ public class LocationCont {
     LocationServ locationservice;
 
     @PostMapping("/addlocation")
-    public Location add(@RequestBody Location location) {
+    public Location addlocation(@RequestBody Location location) {
         return locationservice.createlocation(location);
     }
 
     @GetMapping("/showlocation")
-    public List<Location> show() {
+    public List<Location> showlocation() {
         return locationservice.getalllocation();
     }
 }
