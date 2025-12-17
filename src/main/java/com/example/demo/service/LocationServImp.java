@@ -13,4 +13,5 @@ public class LocationServImp implements LocationServ{
     public List<Location> getall(){
         return Locationrepo.findAll();
     }
+    
 }
