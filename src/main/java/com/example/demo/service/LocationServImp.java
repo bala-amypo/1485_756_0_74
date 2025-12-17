@@ -12,6 +12,7 @@ public class LocationServImp implements LocationServ{
     public Location createlocation(Location le){
         return locationrepo.save(le);
     }
+    @Override
     public List<Location> getall(){
         return locationrepo.findAll();
     }
