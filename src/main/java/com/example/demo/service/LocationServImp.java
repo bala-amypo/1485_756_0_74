@@ -3,7 +3,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.Location;
 import org.springframework.stereotype.Service;
-import com.example.demo.repository.LocatioRepo;
+import com.example.demo.repository.LocationRepo;
 @Service
 public class LocationServImp implements LocationServ{
     @Autowired
