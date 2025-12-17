@@ -3,7 +3,7 @@ import com.example.demo.entity.Location;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface LocatioRepo extends JpaRepository<Location,Long>{
+public interface LocationRepo extends JpaRepository<Location,Long>{
 
     
 }
